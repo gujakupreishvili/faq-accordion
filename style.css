@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 327px;
+  background-color: white;
+  border-radius: 23px;
+  position: relative;
+}
+.text-div{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 34px;
+}
+.main-img{
+  position: absolute;
+  left: 4%;
+  top: -20%;
+}
+h1{
+color: #1E1F36;
+font-family: "Kumbh Sans";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+align-self: center;
+margin-bottom: 38px;
+margin-top: 18px;
+}
+
+.first-span{
+  display: none;
+}
+.information-hover{
+  display: flex;
+  flex-direction: column;
+}
+.information{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 18px;
+}
+p{
+  color: #4B4C5F;
+  font-family: "Kumbh Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 235px;
+  cursor: pointer;
+}
+p:hover{
+  color: #F47B56;;
+}
+hr{
+  margin-bottom: 19px;
+  width: 279px;
+  background: #E8E8EA;
+}
+.first-span{
+  color: #787887;
+  font-family: "Kumbh Sans"; 
+  font-size: 12px; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  margin-top: 13px;
+}
+.arrow-1,
+.arrow-2,
+.arrow-3,
+.arrow-4,
+.arrow-5{
+  cursor: pointer;
+}
+.second-span,
+.third-span,
+.fourth-span,
+.fifth-span{
+  display: none;
+  color: #787887;
+  font-family: "Kumbh Sans"; 
+  font-size: 12px; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  margin-top: 13px;
+}
+.main-img-desktop{
+  display: none;
+}
+.shadow-desktop{
+  display: none;
+}
+.tag{
+  display: none;
+}
+@media(width>=1024px){
+  .main-container{
+    flex-direction: row;
+    width: 920px;
+    height: 509px;
+    gap: 88px;
+  }
+  .main-img{
+    display: none;
+  }
+  .shadow{
+    display: none;
+  }
+  .main-img-desktop{
+    display: block;
+    margin-left: -1px;
+  }
+  .shadow-desktop{
+    display: block;
+    position: absolute;
+    top: 0%;
+  }
+  p{
+    width: 253px;
+  }
+  hr{
+    width: 350px;
+  }
+  .information{
+    gap: 77px;
+  }
+  .tag{
+    display: block;
+    position: absolute;
+    left: -11%;
+    top: 40%;
+  }
+  .information{
+    position: relative;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .arrow-1,
+  .arrow-2,
+  .arrow-3,
+  .arrow-4,
+  .arrow-4,
+  .arrow-5{
+    position: absolute;
+    right: 0%;
+  }
+}
